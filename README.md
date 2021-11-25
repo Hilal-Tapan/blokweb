@@ -40,11 +40,11 @@ https://www.apple.com
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="nike website 1.png" width="375px" alt="homepage">
+<img src="nike website 1.png" width="375px" alt="homepage"> <!---- me images doen het niet in readme, wel in me andere bestand>
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="pagina 2 apple.png" width="375px" alt="customer care page">
+<img src="" width="375px" alt="customer care page">
  
 </details>
 
