@@ -16,14 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Hilal Tapan (vervangen door jouw naam)
+Hilal Tapan 
 
 #### Je startniveau:
-Zwart (ik heb mijn propedeuse jaar op Hogeschool Utrecht gedaan en dus nog nooit html, ccs gehad, wel een cursus in gevolgd tijdens de zomervakantie. Wel heb ik javascript kennis.) 
+Blauw 
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
-Ik weet niet wat dit is
+Weet ik nog niet
  
 </details>
 
@@ -37,15 +36,15 @@ Ik weet niet wat dit is
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://www.apple.com 
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="nike website 1.png" width="375px" alt="homepage">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+<img src="pagina 2 apple.png" width="375px" alt="customer care page">
  
 </details>
 
@@ -57,13 +56,13 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="nike website format.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+<img src="" width="375px" alt="breakdown van een dynamisch deel">
 
 ### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
