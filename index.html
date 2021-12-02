@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Howdy FED2122</title>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
  
@@ -21,181 +23,188 @@
 <body>
 	<!--- BODY HEADER-->
  <header> 
-
 	<nav>
-	<ul> <!---Ik heb er A'tjes in list items verwerkt, klopt dit? En wat vul ik bij href in?-->
-		<li> <a href="options"></a> </li> 
-		<li> <a href="#">
-			<img src="./images/header nav/apple logo.png" alt="apple logo" width="50" height="60"></a> </li> 
-		<li> <a href="#">
-			<img src="./images/header nav/winkelmandje.png" alt="winkelmandje"></a> </li> 
-	</ul>
+		<ul> 
+			<li> 
+				<button aria-label="open het menu">
+					<span></span>
+					<span> </span>
+					<span></span>
+					<span></span>
+				</button>
+				</a> 
+			</li> 
+			<li> 
+				<a href="https://www.apple.com/nl/">
+					<img src="./images/header nav/apple logo.png" alt="apple logo">
+				</a> 
+			</li> 
+			<li> 
+				<a href="#">
+					<img src="./images/header nav/tasje.png" alt="winkelmandje">
+				</a> 
+			</li> 
+		</ul>
 	</nav>
-
 </header>
 
 	
 <!--- MAIN -->
 <main>
-	<section>
    <header>
-	   <p>Begin vroeg met shoppen voor de</p>
-	   <p>feestdagen, zodat je de meeste keuze</p>
-	   <p>hebt</p> 
+	   <p>Begin vroeg met shoppen voor de feestdagen, zodat je de meeste keuze hebt. <a href="#">Shop nu ></a></p> 
+		
 
-	<ul>
-		<li> <a href="Shop nu >"></a></li>
-	</ul>
    </header>
 </section>
 
 <!---FIRST-->
-<section>
+<section class="first">
 	<img src="./images/first section/christmas logo.png" alt="christmas logo apple">
 	<h1>Laten we er voor</h1>
 	<h1>iedereen een feest</h1>
 	<h1>van maken.</h1>
-	<a href="Shop cadeaus >"></a>
-	<img src="./images/first section/macbook swirl.jpeg" alt="achtergrond foto" width="50%"> <!--- moet ik achtergrond fotos ook hierin zetten op pas bij Css?-->
+	<a href="#">Shop cadeaus ></a>
+	<img src="./images/first section/macbook-swirl.jpeg" alt="achtergrond foto"> 	
 </section>
 
 
 <!--- IPHONE 13 PRO-->
-<section>
+<section class="iphone-13-pro">
 	<h2>iPhone 13 pro</h2>
 	<h3>O. Zo. Pro.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li> 
+		<li><a href="#">Koop ></a></li>
 	</ul>
- <img src="" alt="achtergrond foto">
+ <img src="./images/section 2/iphone 13 pro.jpeg" alt="achtergrond foto">
 </section>
 
 <!--- IPHONE 13-->
-<section>
+<section class="iphone-13"> 
     <h2>iPhone 13</h2>
 	<h3>Je nieuwe superpower.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
-	<img src="" alt="achtergrond foto">
+	<img src="./images/section 3/hero_iphone_13__f194u1rdooeq_small_2x.jpg" alt="achtergrond foto">
 </section>
 
 
 <!--- MACBOOK PRO-->
-<section>
+<section class="macbook-pro">
     <h2>Macbook Pro</h2>
 	<h3>Pro gaat turbo.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
-	<img src="" alt="achtergrond foto">
+	<img src="./images/section 4/tile_macbookpro__cx0ur0qg9biq_small_2x.jpg" alt="achtergrond foto">
 </section>
 
 
 <!--- AIRPODS-->
-<section>
-	<img src="" alt="achtergrond foto">
+<section class="airpods">
+	<img src="./images/section 5/airpods.jpeg" alt="achtergrond foto">
 	<h2>Airpods</h2>
 	<h3>Compleet nieuw</h3>
 	<h3>met ruimtelijke audio.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
 </section>
 
 
 <!--- APPLE WATCH-->
-<section>
-	<img src="" alt="apple watch logo">
+<section class="apple-watch">
+	<img src="./images/section 6/apple watch 2.png" alt="apple watch logo">
 	<h3>Ons grootste display tot nu toe.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
-	<img src="" alt="achtergrond foto">
+	<img src="./images/section 6/iwatch.jpeg" alt="achtergrond foto">
 </section>
 
 
 <!--- IPAD MINI-->
-<section>
-	<img src="" alt="ipad mini logo">
-	<h3>Megakracht. Maatje mini</h3>
+<section class="ipad-mini">
+<!-- <img src="./images/section 7/promo_logo_ipad_mini__n5nqff6gq8yu_small_2x.png" alt="ipad mini logo"> -->
+<h2>iPad <em>mini</em></h2>	
+<h3>Megakracht. Maatje mini</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
-	<img src="" alt="achtergrond foto">
+	<img src="./images/section 7/promo_ipad_mini__spq4zjcuuaie_small_2x.jpg" alt="achtergrond foto">
 </section>
 
 
 <!---AIRTAG-->
-<section>
+<section class="airtag">
 	<h2>AirTag</h2>
 	<h3>Wat weg is, is gezien.</h3>
 	<ul>
-		<li><a href="Meer informatie"></a></li>
-		<li><a href="Koop"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Koop ></a></li>
 	</ul>
-	<img src="" alt="achtergrond foto">
+	<img src="./images/section 8/Apple_AirTag.jpeg" alt="achtergrond foto">
 </section>
 
 
 <!---APPLE TV+-->
-<section>
-	<img src="" alt="background img">
-	<img src="" alt="logo apple tv +">
+<section class="apple-tv">
+	<img src="./images/section 9/apple tv logo.png" alt="logo apple tv +">
+	<img src="./images/section 9/tile__cauwwcyyn9hy_small_2x.jpg" alt="background img">	
 	<h3>Koop een Apple device en krijg</h3>
 	<h3>3 maanden lang gratis</h3>
 	<h3>Apple TV+.</h3>
 	<ul>
-		<li><a href="Meer informatie >"></a></li>
-		<li><a href="Probeer het gratis uit"></a></li>
+		<li><a href="#">Meer informatie ></a></li>
+		<li><a href="#">Probeer het gratis uit</a></li>
 	</ul>
 </section>
 
 </main>
 
 
-<!---FOOTER-->
+<!---FOOTER--> <!----- 1 p maken van alles, met css fixen-->
 <footer>
 	<p>1.€ 4,99/maand na afloop van gratis proefperiode. Eén abonnement per 'Delen</p>
-	<p>met gezin'-groep. Aanbod geldig tot 3 maanden na activering van een in</p>
-	<p>aanmerking komend device. Het abonnement wordt automatisch verlengd</p>
-	<p>totdat het wordt opgezegt. Er zijn beperkingen en andere voorwaarden van</p>
-	<p>toepassing.</p>
+	met gezin'-groep. Aanbod geldig tot 3 maanden na activering van een in
+	aanmerking komend device. Het abonnement wordt automatisch verlengd
+	totdat het wordt opgezegt. Er zijn beperkingen en andere voorwaarden van
+	toepassing.</p>
 
-	<ul> <!-- Moet ik hier ook knopjes van maken die uitklappen, zo ja hoe?-->
-		<li>Bestellen en informatie</li>
-		<li>Services</li>
-		<li>Account</li>
-		<li>Apple Store</li>
-		<li>Voor bedrijven</li>
-		<li>Voor het onderwijs</li>
-		<li>Voor de gezondheidszorg</li>
-		<li>Waarden van Apple</li>
-		<li>Over Apple</li>
+	<ul> <!-- -->
+		<li> <a href="#">bestellen informatie</a></li>		
+		<li> <a href="#">Services</a></li>
+		<li><a href="#">Account</a></li>
+		<li><a href="#">Apple Store</a></li>
+		<li><a href="#">Voor bedrijven</a></li>
+		<li><a href="#">Voor het onderwijs</a></li>
+		<li><a href="#">Voor de gezondheidszorg</a></li>
+		<li><a href="#">Waarden van Apple</a></li>
+		<li><a href="#">Over Apple</a></li>
 	</ul>
 
-	<!---Hoe verwerk ik een a in een normale tekst/zin?-->
-<p>Andere manieren om te shoppen:</p> <a href="Zoek een Apple Store"></a> <p>of</p> <a href="andere winkel"></a>
-<p>bij jou in </p>
-<p>de buurt. Of bel 0800 0200 570.</p>
+	<!---Hoe verwerk ik een a in een normale tekst/zin? -zet a in de normale p-->
+<p>Andere manieren om te shoppen: <a href="#">Zoek een Apple Store</a> of <a href="#">andere winkel</a>
+bij jou in de buurt. Of bel 0800 0200 570.</p>
 
 <p>Nederland</p>
 
 <p>Copyright (logo) 2021 Apple Inc. Alle rechten voorbehouden</p>
 
-<ul> <!----Hoe zet ik deze items naast elkaar?-->
-	<li>Privacybeleid</li>
-	<li>Gebruik van cookies</li>
-	<li>Gebruiksvoorwaarden</li>
-	<li>Verkoopvoorwaarden</li>
-	<li>Juridische informatie</li>
-	<li>Site-overzicht</li>
+<ul> <!----Hoe zet ik deze items naast elkaar?/ -flexbox-->
+	<li><a href="#">Privacybeleid</a></li>
+	<li><a href="#">Gebruik van cookies</a></li>
+	<li><a href="#">Gebruiksvoorwaarden</a></li>
+	<li><a href="#">Verkoopvoorwaarden</a></li>
+	<li><a href="#">Juridische informatie</a></li>
+	<li><a href="#">Site-overzicht</a></li>
 </ul>
 
 </footer>
