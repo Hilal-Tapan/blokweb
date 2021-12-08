@@ -23,7 +23,7 @@
 body {
   margin:0;
   background-color:var(--background-color);
-  font-family: apple-font; 
+  font-family: apple-font;
   color:var( --main-color);
 }
 
@@ -45,7 +45,6 @@ h1 {
 h2 {
     text-align: center;
     line-height: .5em; 
-    font-size:x-large;
   }
   
 h3 {
@@ -61,7 +60,7 @@ ul li {
 /* STIJLING VOOR SMALL SCREEN VERSIE PAGINA */
 /*BODY HEADER*/
 header {
-  padding:.5em .75em;
+  padding:1px;
   background-color:var(--main-header-color);
 }
 
@@ -72,11 +71,11 @@ header ul {
 
 header ul li {
   list-style-type: none; 
-  width:5em;
+  width:4em;
 }
 
- header img {
-width: 50%;
+header img {
+width: 40%;
 } 
 
 
@@ -100,11 +99,11 @@ text-decoration:none;
 }
 
 
-/* VRAAG: Hamburger menu werkt niet bij mij */
+
 /* HAMBURGER MENU */
 button {
   position:relative; 
-  width:3em; height:3em;
+  width:2em; height:2em;
   margin:0; padding:0;
   font-size:1em;
   appearance:none;
@@ -120,38 +119,32 @@ button span {
   /* hiermee worden de span uit de normale flow gehaald */
   /* in combinatie met flex van de button staan ze dan over elkaar heen */
   position:absolute;
-  width:2em; height: 2px;
+  width:1.5em; height: 2px;
   background-color:var(--button-background-color);
   transition:.5s cubic-bezier(0.175, 0.885, 0.320, 1.275);
 }
 
 button span:first-of-type {
-  transform:translatey(-12px);  
+  transform:translatey(-8px);  
 }
 
 button span:last-of-type {
-  transform:translatey(12px);  
+  transform:translatey(9px);  
 }
 
-body.menuOpen button span {
-  background-color:var(--button-background-color);
-  /* zodat de beweging op de heenweg .5 seconde duurt */
-  /* met ease-out begint de beweging snel en eindigt langzaam */
-  transition:.5s ease-out;
 
-}
-body.menuOpen button span:first-of-type {
+
+nav.menuOpen button span:first-of-type {
   /* het eerste streepje gaat terug naar het midden */
   /* en draait ondertussen 45 graden */
   transform:translatey(0) rotate(45deg);  
 }
 
-body.menuOpen button span:nth-of-type(2) {
+nav.menuOpen button span:nth-of-type(2) {
   /* het tweede streepje wordt doorzichtig */
   opacity:0;
 }
-
-body.menuOpen button span:last-of-type {
+nav.menuOpen button span:last-of-type {
   /* het laatste streepje gaat terug naar het midden */
   /* en draait ondertussen -45 graden */
   transform:translatey(0) rotate(-45deg);  
@@ -160,20 +153,32 @@ body.menuOpen button span:last-of-type {
 
 
 
-
-
 /* FIRST */
+.first { 
+  background-color: #fcedf8;
+ }
+
 .first img:first-child {
   display: block;
   margin-left: auto;
   margin-right: auto; 
   width: 10%;
-  margin-top: 2em;
+  padding-top: 2em; 
 }
 
-/* VRAAG: Ik krijg de background image niet gepositioneerd achter de tekst, hoe doe ik dit? */
-.first body { 
- background-image: url(/images/first\ section/macbook-swirl.jpeg);
+.first img:last-child {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.first h2 {
+   text-align:center;
+  /* padding: 0 7em; */
+   width:50%;
+   margin: 0.75em auto;
+   line-height: 1.2em; 
+   font-size:32px;
 }
 
 .first a {
@@ -186,7 +191,24 @@ margin-right: auto;
 
 
 /* IPHONE 13 PRO */
-.iphone-13-pro a{
+.iphone-13-pro {
+  position:relative;
+}
+
+.iphone-13-pro section{
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 1em;
+}
+
+.iphone-13-pro h2 {
+  font-size:32px;
+}
+
+.iphone-13-pro a {
   text-align: center;
   text-decoration:none;
   display: block;
@@ -194,26 +216,299 @@ margin-right: auto;
   margin-right: auto; 
 }
 
-/* VRAAG: Hoe zet ik de A'tjes dichterbij elkaar? */
 .iphone-13-pro ul {
-
   display: flex;
   justify-content:space-evenly;
- 
+}
+
+.iphone-13-pro img {
+  margin-top: .5em;
+}
+
+
+
+/* IPHONE 13 */
+.iphone-13 {
+ position:relative;
+}
+
+.iphone-13 section {
+  /* https://stackoverflow.com/questions/19461521/how-to-center-an-element-horizontally-and-vertically */
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.iphone-13 h2 {
+  color: white;
+  line-height: 1em; 
+  font-size:20px;
+  padding-top: 3em;
+}
+
+.iphone-13 h3 {
+  color:lightpink;
+  line-height: 0; 
+  font-size:16px;
+}
+
+.iphone-13 ul {
+  display: flex;
+  justify-content:space-between;
+  padding-bottom: 2em;
+}
+
+.iphone-13 a {
+  text-align: center;
+  text-decoration:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.iphone-13 img{
+ margin-top: .5em;
+}
+
+
+/* MACBOOK PRO */
+.macbook-pro {
+  position:relative;
+  margin-top: .5em;
+}
+
+.macbook-pro section{
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-top: 1em;
+}
+
+.macbook-pro h2 {
+  font-size:32px;
+}
+
+.macbook-pro ul {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.macbook-pro a {
+  text-decoration:none;
 }
 
 
 
 
+/* AIRPODS */
+.airpods {
+  position:relative;
+  margin-top:.5em;
+  /* background-color: #FBFBFD;
+  border-bottom: #FBFBFD; */
 
-.ipad-mini h2 em {
+}
+
+.airpods section {
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-top: 18em;
+  margin-left: auto;
+  margin-right: auto; 
+  background-color: #FBFBFD;
+}
+
+.airpods h2 {
+  font-size:32px;
+}
+
+.airpods ul {
+  display: flex;
+  justify-content:space-evenly;
+  /* background-color: #FBFBFD; */
+}
+
+.airpods a {
+  text-decoration:none;
+  }
+
+
+
+
+/* APPLE WATCH */
+.apple-watch {
+  position:relative;
+  margin-top: 5em;
+}
+
+.apple-watch section {
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-top: 4em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.apple-watch img:first-child {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 20%;
+}
+
+
+
+.apple-watch ul {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.apple-watch a {
+  text-decoration:none;
+}
+
+
+/* IPAD MINI */
+.ipad-mini {
+  position:relative;
+}
+
+.ipad-mini section{
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.ipad-mini h2 em{
  color:transparent;
  background-image: linear-gradient(110deg,orange, hotpink 25%, purple);
  background-clip: text;
  -webkit-background-clip: text;
- display:inline-block;
+ /* display:inline-block; */
  font-family: 'Pacifico', cursive;
  font-style: normal;
- padding-right:1em;
+ font-size: 32px;
+}
 
+.ipad-mini ul {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.ipad-mini a{
+  text-decoration:none;
+}
+
+.ipad-mini img{
+ margin-top: .5em;
+}
+
+/* AIRTAG */
+
+.airtag {
+  position:relative;
+  background-color: #F5F5F7;
+  margin-top: .5em;
+}
+
+.airtag section{
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.airtag h2 {
+  font-size:30px;
+}
+
+.airtag img {
+  margin-top: 5em;
+}
+
+.airtag ul {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.airtag a{
+  text-decoration:none;
+}
+
+
+/* APPLE TV */
+.apple-tv {
+  position:relative;
+  margin-top: .5em;
+}
+
+.apple-tv section {
+  position:absolute;
+  width: 100%;
+  display: block;
+  margin-top: 15em;
+  margin-left: auto;
+  margin-right: auto; 
+  color:white;
+}
+
+
+.apple-tv img:first-child{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 16%;
+  padding-top: 2em; 
+}
+
+.apple-tv ul{
+  margin-top: 2em;
+}
+.apple-tv a{
+  text-align: center;
+  text-decoration:none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  color:white;
+  line-height: 1.5em;
+}
+
+
+/* FOOTER */
+.footer{
+  background-color: #F5F5F7;
+  font-size: 13px;
+  color:grey;
+}
+
+.footer p:first-child {
+margin-left: 2em;
+margin-right: 2em;
+padding-top: 2em;
+line-height: 1.3em;
+}
+
+.footer ul a {
+  text-decoration:none;
+  color:grey;
+  line-height: 3em; 
+}
+
+.footer section{
+  margin-left: 2em;
+  margin-right: 2em;
+  line-height:1.5em;
 }

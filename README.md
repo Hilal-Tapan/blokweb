@@ -125,7 +125,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- Hamburger menu doet het niet
+- Hamburger menu doet het niet. Het lag aan de css, deze was niet gekoppeld aan me html.
 - Hoe krijg ik de kopjes binnen het hamburger menu
 - Afbeeldingen gepositioneerd op achtergrond
 - De A'tjes dichterbij elkaar positioneren, hoe doe ik dit.

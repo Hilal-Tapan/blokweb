@@ -1,3 +1,4 @@
+console.log("hallo");
 var deButton = document.querySelector("button");
 
 deButton.addEventListener("click", openMenu);
