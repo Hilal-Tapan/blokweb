@@ -21,30 +21,69 @@
 
 </head>
 <body>
-	<!--- BODY HEADER-->
+	<!--- HAMBURGER MENU-->
  <header> 
-	<nav>
+	<nav>	
+
+			<a href="https://www.apple.com/nl/">
+				<img src="./images/header nav/apple logo.png" alt="apple logo">
+			</a> 
+
+		<button aria-label="open het menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<a href="#">
+			<img src="./images/header nav/tasje.png" alt="winkelmandje">
+		</a> 
+    </nav>
+
+
+    <section>
+		<form role="search" action="/" method="get">
+			<label for="header-search">Zoeken</label>
+					
+		<input type="text" id="header-search" placeholder="Zoeken op apple.com"/>
+			 <button  class="visually-hidden" type="button">Zoeken</button>
+		</form>
+ 
 		<ul> 
-			<li> 
-				<button aria-label="open het menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</li> 
-			<li> 
-				<a href="https://www.apple.com/nl/">
-					<img src="./images/header nav/apple logo.png" alt="apple logo">
-				</a> 
-			</li> 
-			<li> 
-				<a href="#">
-					<img src="./images/header nav/tasje.png" alt="winkelmandje">
-				</a> 
-			</li> 
+			<li>
+				<a href="#">Store</a>
+			</li>
+			<li>
+				<a href="#">Mac</a>
+			</li>
+			<li>
+				<a href="#">iPad</a>
+			</li>
+			<li>
+				<a href="#">iPhone</a>
+			</li>
+			<li>
+				<a href="#">Watch</a>
+			</li>
+			<li>
+				<a href="#">AirPods</a>
+			</li>
+			<li>
+				<a href="#">TV & Woning</a>
+			</li>
+			<li>
+				<a href="#">Alleen bij Apple</a>
+			</li>
+			<li>
+				<a href="#">Accecoires</a>
+			</li>
+			<li>
+				<a href="#">Support</a>
+			</li>
 		</ul>
-	</nav>
+	</section>
 </header>
+
 
 	
 <!--- MAIN -->
@@ -57,9 +96,9 @@
 <!---FIRST-->
 <section class="first">
 	<img src="./images/first section/christmas logo.png" alt="christmas logo apple">
-	<h2>Laten we er voor iedereen een feest van maken.</h2>
+	<h1>Laten we er voor iedereen een feest van maken.</h1>
 	<a href="#">Shop cadeaus ></a>
-	<img src="./images/first section/airpods__b0941p5gmwj6_small.png" alt="achtergrond foto"> 	
+	<img src="./images/first section/airpods__b0941p5gmwj6_small.png" alt="airpod swirl"> 	
 </section>
 
 
@@ -204,14 +243,13 @@
 	</ul>
 
 	<!---Hoe verwerk ik een a in een normale tekst/zin? -zet a in de normale p-->
-<section>
 		<p>Andere manieren om te shoppen: <a href="#">Zoek een Apple Store</a> of <a href="#">andere winkel</a>
 		bij jou in de buurt. Of bel 0800 0200 570.</p>
 		
 		<p>Nederland</p>
 		
 		<p>Copyright 2021 Apple Inc. Alle rechten voorbehouden</p>
-</section>
+
 
 
 <ul> <!----Hoe zet ik deze items naast elkaar?/ -flexbox-->

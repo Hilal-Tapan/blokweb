@@ -125,10 +125,7 @@ samen met je groepje opstellen
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- Hamburger menu doet het niet. Het lag aan de css, deze was niet gekoppeld aan me html.
-- Hoe krijg ik de kopjes binnen het hamburger menu
-- Afbeeldingen gepositioneerd op achtergrond
-- De A'tjes dichterbij elkaar positioneren, hoe doe ik dit.
+Het hamburgermenu doet het inmiddels, ik had het niet gelinkt aan de css waardoor het niet werkte. Ik heb inmiddels ook de kopjes binnen het hamburger menu gekregen en begrijp het ook. De apple site gebruikt een aantal png afbeeldingen en een aantal jpegs, waardoor ik een variatie aan mogelijkheden heb binnen het positioneren. Het positioneren is gelukt en heb verschillende manieren gebruikt, passend bij het afbeeldingstype. De a'tjes dichterbij elkaar positioneren ben ik nog steeds niet uit, maar ik laat het heel even tot eind detail omdat het er enigzins wel oke uitziet en ik de tijd niet heb om nog langer online te zoeken hiernaar, om het perfect te centreren.
 
 </details>
 
@@ -143,29 +140,22 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
+- Voiceover: alles werkte goed, img alleen toegankelijkere alt namen geven.
+- Toetsenbord: alles werkte, als extra eventueel focus en hover state toevoegen aan de a'tjes.
+- Diverse beperkingen: hier niks aan toe te voegen.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### De voiceover
+Bij de voiceover werkte alles goed. Het enige wat minder toegankelijk was dat mijn img's alt's hebben die alleen ik begrijp. Dit kan onduidelijk zijn voor andere die gebruik maken van de voiceover.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik zou dit kunnen oplossen door de alt's een andere beschrijving te geven die beter passen bij de img, waardoor de gebruiker ook snapt waar het over gaat.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Toetsenbord
+Alles werkte goed, de links waren te volgen en alles was toegankelijk. Ik zou nog als extra een hover en focus state kunnen toevoegen aan de a'tjes, dit had ik nog niet toegevoegd.
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Diverse beperkingen 
+Hier was alles eigenlijk erg goed, niks op aan te vullen.
 
 </details>
 
@@ -231,8 +221,21 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+2. https://wtf.tw/ref/duckett.pdf 
+3. https://dlo.mijnhva.nl/d2l/le/content/324289/Home 
+4. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input 
+5. http://web-accessibility.carnegiemuseums.org/code/search/
+6. https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Responsive_navigation_patterns 
+7. https://www.w3schools.com/css/css_rwd_images.asp 
+8. https://fonts.google.com 
+9. https://extract.pics/ 
+10. https://www.apple.com/nl/ 
+11. https://codepen.io/shooft/pen/bGoNMpP?editors=0100 
+12. https://codepen.io/Yunusemre18/pen/GREVqqM?editors=1100 
+13. https://www.w3schools.com/css/css_positioning.asp 
+14. https://codepen.io/deannabosschert/pen/qBrjrqw?editors=0100 
+15. https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured 
+16. https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure 
 
 </details>

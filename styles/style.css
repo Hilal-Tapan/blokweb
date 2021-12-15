@@ -18,6 +18,9 @@
 @font-face {
   font-family: "apple-font";
   src: url("/fonts/SFPRODISPLAYREGULAR.woff") format("woff");
+
+  font-family: "apple-bold";
+  src: url("/fonts/SFPRODISPLAYBOLD.woff");
 }
 
 body {
@@ -59,49 +62,28 @@ ul li {
   
 /* STIJLING VOOR SMALL SCREEN VERSIE PAGINA */
 /*BODY HEADER*/
-header {
+
+body > header nav {
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
   padding:1px;
   background-color:var(--main-header-color);
 }
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-header ul li {
+body > header nav a {
   list-style-type: none; 
-  width:4em;
+  width:2em;
+
 }
 
-header img {
-width: 40%;
+body > header img {
+width: 100%;
 } 
 
-
-/* MAIN HEADER */
-main header {
-  background-color:var(--section-header-color); 
-}
-
-main header p {
-  color:var(--header-color-a);
-  text-align:center;
-  /* padding: 0 7em; */
-   width:60%;
-   margin: 0.75em auto;
-   line-height: 1.5em; 
-}
-
-main header a{
-color:var(--header-color-a);
-text-decoration:none;
-}
-
-
-
-/* HAMBURGER MENU */
-button {
+header nav button {
   position:relative; 
   width:2em; height:2em;
   margin:0; padding:0;
@@ -113,9 +95,29 @@ button {
   display:flex;
   justify-content:center;
   align-items:center;
+  order: -1;
 }
 
-button span {
+/* HAMBURGER MENU OPENKLAPPEN */
+header section {
+  position:fixed;
+  background-color:var(--main-header-color);
+  top:0;
+  left:0;
+  right:0;
+  bottom:0; 
+  padding:4em 2em 2em;
+  transform:translateY(-100%);
+	
+	transition:.5s;
+}
+
+header.menuOpen section {
+  transform:translateY(0);
+}
+
+/* HAMBURGER MENU STREEPJES KNOP */
+nav button span {
   /* hiermee worden de span uit de normale flow gehaald */
   /* in combinatie met flex van de button staan ze dan over elkaar heen */
   position:absolute;
@@ -132,25 +134,45 @@ button span:last-of-type {
   transform:translatey(9px);  
 }
 
-
-
-nav.menuOpen button span:first-of-type {
+header.menuOpen button span:first-of-type {
   /* het eerste streepje gaat terug naar het midden */
   /* en draait ondertussen 45 graden */
   transform:translatey(0) rotate(45deg);  
 }
-
-nav.menuOpen button span:nth-of-type(2) {
+header.menuOpen button span:nth-of-type(2) {
   /* het tweede streepje wordt doorzichtig */
   opacity:0;
 }
-nav.menuOpen button span:last-of-type {
+header.menuOpen button span:last-of-type {
   /* het laatste streepje gaat terug naar het midden */
   /* en draait ondertussen -45 graden */
   transform:translatey(0) rotate(-45deg);  
 }
 
 
+
+
+/* MAIN HEADER */
+main header {
+  background-color:var(--section-header-color); 
+
+}
+
+main header p {
+  color:var(--header-color-a);
+  text-align:center;
+  /* padding: 0 7em; */
+   width:60%;
+   padding-top: .5em;
+   padding-bottom: .5em;
+   margin: 0em auto;
+   line-height: 1.5em; 
+}
+
+main header a{
+color:var(--header-color-a);
+text-decoration:none;
+}
 
 
 /* FIRST */
@@ -172,7 +194,7 @@ nav.menuOpen button span:last-of-type {
   margin: 0 auto;
 }
 
-.first h2 {
+.first h1 {
    text-align:center;
   /* padding: 0 7em; */
    width:50%;
@@ -296,10 +318,12 @@ margin-right: auto;
 .macbook-pro ul {
   display: flex;
   justify-content:space-evenly;
+
 }
 
 .macbook-pro a {
   text-decoration:none;
+
 }
 
 
@@ -414,7 +438,6 @@ margin-right: auto;
 }
 
 /* AIRTAG */
-
 .airtag {
   position:relative;
   background-color: #F5F5F7;
@@ -488,27 +511,56 @@ margin-right: auto;
 
 
 /* FOOTER */
+/* Streepjes toevoegen */
 .footer{
   background-color: #F5F5F7;
-  font-size: 13px;
+  font-size: 14px;
   color:grey;
+  padding-top: .5em;
 }
 
-.footer p:first-child {
-margin-left: 2em;
-margin-right: 2em;
-padding-top: 2em;
-line-height: 1.3em;
+.footer p:first-of-type {
+padding-left: 1em;
+line-height: 1.5em;
 }
 
 .footer ul a {
   text-decoration:none;
   color:grey;
-  line-height: 3em; 
 }
 
-.footer section{
-  margin-left: 2em;
-  margin-right: 2em;
+.footer ul:first-of-type{
+  line-height: 3em; 
+  padding-left:1em;
+}
+
+.footer p:nth-of-type(2) {
+  padding-left: 1em;
   line-height:1.5em;
+}
+
+.footer p a {
+  text-decoration:none;
+}
+
+.footer p:nth-of-type(3) {
+  padding-left: 1em;
+  padding-top: 1em;
+  font-family:apple-bold;
+}
+
+.footer p:nth-of-type(4) {
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.footer ul:last-of-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:1em;
+  line-height: 1em; 
+  padding:0 1em 1em 1em;
+  font-family:apple-bold;
+  
 }
